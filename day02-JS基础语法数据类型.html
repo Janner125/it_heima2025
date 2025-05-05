@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基础语法数据类型</title>
+    <!-- 
+        数据类型
+            1.原始类型
+                number:数字（整数小数NaN）
+                string:字符串，单双引号都可
+                boolean
+                null
+                undefined:未初始化的已声明的变量的初始值为undefined
+            【使用 typeof 获取数据的类型】
+
+            2.引用类型
+    -->
+
+    <!-- 
+        运算符
+        与JAVA同
+        ===   全等运算符[==会进行类型转换 ===不会进行类型转换]
+     -->
+
+     <!-- 
+        js中的类型转换
+            1.字符串类型转换为数字：将字面值站为数字，如果字面值不是数字，则转为Nan
+            2.其他类型转为boolean
+                number:0和NaN为false,其他为true
+                string:空字符串为false,其他为true
+                null和undefined均转为false
+      -->
+  
+</head>
+<body>
+    <script>
+        // alert(typeof null);//object  一种沿用的错误
+
+        //类型转换-其他转数字
+        // alert(parseInt('12'));//12
+        // alert(parseInt('12A45'));//12
+        // alert(parseInt('A12'));//NaN
+
+     </script>
+</body>
+
+</html>

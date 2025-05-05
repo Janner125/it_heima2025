@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS对象Array</title>
+    <!-- 
+        Array数组
+        定义1：var 变量名=new Array(元素列表);
+        定义2：var 变量名=[元素列表];
+
+        特点： 长度可变  类型可变
+
+        属性：length
+        方法：foreach,push,splice
+     -->
+</head>
+<body>
+
+</body>
+<script>
+    //定义数组
+    var arr=new Array(1,2,3,4,5);
+    alert(arr);
+
+    var arr2=[11,22];
+
+    //foreach 遍历数组中有值的元素
+   arr.forEach(function (e){
+    console.log(e);
+   })
+   //ES6
+   arr.forEach(e =>{
+    console.log(e);
+   })
+   //push 尾部添加元素
+   arr.push(7,8,9);
+
+   //splice 删除元素
+   arr.splice(2,2)
+ </script>
+</html>
