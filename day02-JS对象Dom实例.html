@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS对象Dom实例</title>
+</head>
+
+<body>
+    <img id='h1' src="img/news_logo.png"><br>
+    <div class="cls">传智教育</div><br>
+    <div class="cls">黑马程序</div><br>
+
+    <input type="checkbox" name="hobby">电影
+    <input type="checkbox" name="hobby">桌游
+    <input type="checkbox" name="hobby">游戏
+</body>
+<script>
+    //获取element元素对象
+    /* //1.1 根据id获取
+    var img=document.getElementById('h1');
+    alert(img);
+
+    //1.2根据标签
+    var divs= document.getElementsByTagName("div")
+
+    //1.3根据name属性
+    var ins= document.getElementsByName("hobby")
+
+    //1.4根据class属性
+    var divs=document.getElementsByClassName("cls") */
+
+    //2.根据拿出的属性进行查询修改
+    var divs= document.getElementsByTagName('div')
+    var div0=divs[0]
+    div0.innerHTML="传智教育666"
+
+    
+</script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS对象json</title>
+    <!-- 
+        JS自定义对象
+        var 对象名={
+            属性名1：属性值1，
+            属性名2：属性值2，
+            属性名3：属性值3，
+            函数名称：fuction(形参列表){}
+        }；
+     -->
+     <!-- 
+        JSON js对象标记法书写的文本 作为数据载体 实质是键值对  key必须由双引号引出
+        定义： var 变量名='{"key1":value1,"key2":value2,"key3":value3}';
+
+      -->
+</head>
+<body>
+
+</body>
+<script>
+    //自定义对象
+    var user ={
+        name:"Tom",
+        age:10,
+        gender:"male",
+        /* eat:function(){
+            alert("吃饭！");
+        } */
+        //简化格式
+        eat(){
+            alert("eat");
+        }
+
+    };
+
+    //定义JSON
+    var jsonstr='{"name":"Tom","age":18,"gender":"male","addr":["北京","上海"]}';
+    
+    //JSON字符串-->JSON对象
+    var obj=JSON.parse(jsonstr);
+    console.log(obj.name);
+
+    //js对象-->json
+    alert(JSON.stringify(obj));
+    
+ </script>
+</html>

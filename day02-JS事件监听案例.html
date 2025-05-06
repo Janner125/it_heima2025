@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS事件监听案例</title>
+
+    
+</head>
+<body>
+    <img src="img/off.png" id="photo"><br>
+    <input type="button" value="点亮" onclick="fn1()">
+    <input type="button" value="熄灭" onclick="fn2()"><br>
+    <input type="text" id='text' value="ITCAST" onblur="upper()" onfocus="lower()" ><br>
+    <input type="checkbox" name="hobby">电影
+    <input type="checkbox" name="hobby">旅游
+    <input type="checkbox" name="hobby">游戏<br>
+    <input type="button" value="全选" onclick="checkall()">  
+    <input type="button" value="反选" onclick="notall()">
+
+
+</body>
+    
+<script>
+    function fn1(){
+        document.getElementById("photo").src='img/on.png'
+        
+    }
+    function fn2(){
+        document.getElementById("photo").src='img/off.png'
+        
+    }
+    function lower(){
+        var str = document.getElementById("text");
+        str.value=str.value.toLowerCase();
+    }
+    function upper(){
+        var str = document.getElementById("text");
+        str.value=str.value.toUpperCase();
+    }
+
+    //all是关键词 不能用作函数名
+    function checkall(){
+        var ins = document.getElementsByName("hobby");
+        for (let i = 0; i < ins.length; i++) {
+            const element = ins[i];
+            element.checked=true;
+            
+        }
+    }
+    function notall(){
+        var ins = document.getElementsByName("hobby");
+        for (let i = 0; i < ins.length; i++) {
+            const element = ins[i];
+            element.checked=false;
+            
+        }
+    }
+    
+</script>
+</html>
